@@ -1,0 +1,3 @@
+# source ~/.env/bin/activate
+# python3 -m pip install --upgrade pip
+# python3 -m pip --no-cache-dir --timeout=1000 install -r ~/requirements.txt

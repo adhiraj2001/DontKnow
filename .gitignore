@@ -1,0 +1,12 @@
+# IDE Cache
+**/.vscode
+**/.ipynb_checkpoints
+
+# Package Manager Cache
+**/__pycache__
+**/node_modules
+
+# Environment Variables
+**/env
+**/.env
+
