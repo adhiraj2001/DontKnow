@@ -17,8 +17,6 @@ Specifically our task deals with designing a generic data ingestion system, whic
 The user can input multiple datype of data, which can vary in size, type, and use cases, and the system in expected to be able to parse excel sheets, CSVs, and other data formats, which may be stored in a hierarchical, segmented, or single-file fashion.
 The system will contain a novel JSON schema that can be generated without understanding the data, but will maintain enough context to allow for a near one-one mapping to a DB schema.
 
----
-
 ## Functional Requirements
 
 ![System Pipeline](./README_ASSETS/Images/Data_Ingestion.png)
@@ -41,12 +39,10 @@ This projected is divided into 3 parts, each having its independent functionalit
 
 ### 3. Data Loading (Transformation and Migration)
 
-- At this point we will need to cleanse, transform and anonymize the data if needed.
+- At this point we will need to cleanse, transform and anonymize the data if needed. (Not our deliverables, but would require some collaboration from other teams)
 - The loading part involves generating a data loader, that is able to sequentially load the entire raw data, and adapt it to the generated DB schema.
 - This data is simultaneously outputted to the final DB, and logs for this process are maintained. 
 - Upon completion, a summary of this process, containing the final schema, execution logs, and other details, will be generated. At the end of this step, user is able to obtain a final DB from their raw data and JSON schema.
-
----
 
 ## Technical Requirements
 
