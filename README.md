@@ -44,6 +44,24 @@ This projected is divided into 3 parts, each having its independent functionalit
 - This data is simultaneously outputted to the final DB, and logs for this process are maintained. 
 - Upon completion, a summary of this process, containing the final schema, execution logs, and other details, will be generated. At the end of this step, user is able to obtain a final DB from their raw data and JSON schema.
 
+## Non Functional requirements
+
+### Reusability
+
+- The logic that is used for parsing the data from a specific format can be reused for parsing other formats of data .
+- This helps in maintaining the code for a long time and also helps in the process of debugging . 
+
+### Storage
+
+- All the data that we recieve will be parsed and stored in a MySQL database . We are using MySQL to make the data more related to each other and put some logic into it . 
+
+### Users
+
+- There is only one type of user who needs to upload the data and it will be parsed , validated and then ingested into the database if the data provided is valid . 
+
+
+
+
 ## Technical Requirements
 
 Most tasks in this project will be implemented in Python.
