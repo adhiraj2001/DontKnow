@@ -46,21 +46,39 @@ This projected is divided into 3 parts, each having its independent functionalit
 
 ## Non Functional requirements
 
-### Reusability
+### 1.Reusability
 
-- The logic that is used for parsing the data from a specific format can be reused for parsing other formats of data .
+- All the common constants that are being used are imported from a dedicated file for constants which makes the process of debugging very easy . 
+- The logic that is used for parsing the data from a specific format can be reused for parsing other formats of data . Most of the modules that we use are standard modules and there is very less chance of version mismatch of modules . 
 - This helps in maintaining the code for a long time and also helps in the process of debugging . 
 
-### Storage
+### 2.Storage
 
-- All the data that we recieve will be parsed and stored in a MySQL database . We are using MySQL to make the data more related to each other and put some logic into it . 
+- All the data that we recieve will be parsed and stored in a Relational MySQL database
+- We are using MySQL to make the data more related to each other and put some logic into it . 
 
-### Users
+### 3.Users
 
-- There is only one type of user who needs to upload the data and it will be parsed , validated and then ingested into the database if the data provided is valid . 
+- There is only one type of user who needs to upload the data to the user module . 
+- The system then recieves the raw data from the user module and it will be parsed , validated and then ingested into the database if the data provided is valid . 
+
+### 4.Integration
+
+- The system is designed such that it can be easily integrated with the user module from where the data is collected.
+- Integration with other systems such as search and querying systems , analytic systems are also
+
+## Scope
+
+### 1.Things in Scope
 
 
+- Validating data that is being sent by the user module and mapping the attributes to their respective logical attributes and form a relationship between the data .  
+- Creating a specific format of data to which all the raw data is to be converted . 
 
+### 2.Things not in Scope
+
+- Searching and querying the ingested data in not in the scope of the project . 
+- Collecting data from users is not a part of the system . It will be implemented in the user module . 
 
 ## Technical Requirements
 
