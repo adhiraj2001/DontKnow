@@ -19,7 +19,7 @@ The system will contain a novel JSON schema that can be generated without unders
 
 ## Functional Requirements
 
-![System Pipeline](./README_ASSETS/Images/Data_Ingestion.png)
+![System Pipeline](./README_ASSETS/images/Data_Ingestion.png)
 
 
 This projected is divided into 3 parts, each having its independent functionality:
