@@ -1,0 +1,1 @@
+attributes = ["SubjectID","B12_code","VitB12","HbA1c_code","HbA1c_code_6.5","HbA1c","RBS","Hb","RBC","WBC","Platelet","SGOT","SGPT","TC","TG","HDL","LDL","VLDL","UricAcid","Creatinine","TSH","ESR","VitD","filter_$","highvitb12values"]
